@@ -12,7 +12,7 @@ $(document).ready(function(){
                 $("#wrapper").load("../yatru.html");
             }
             else{
-                $("#wrapper").load("../driver.html");
+                $("#wrapper").load("../yatru.html");
             }
         }
     }

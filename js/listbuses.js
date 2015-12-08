@@ -24,7 +24,7 @@ if(Parse){
             
             var oldLoc = new google.maps.LatLng(oldlat, oldlng);
             var newLoc = new google.maps.LatLng(newlat, newlng);
-            var userPos = new google.maps.LatLng(userLat, userLng)
+            var userPos = new google.maps.LatLng(userLat, userLng);
             
             console.log(newLoc);
             
