@@ -19,50 +19,50 @@
         <div id = 'wrapper'>
             NO Content here
         </div>
-            <div id = 'modalBackLays' class = 'hidden'>
-                <div id = 'modal' class = 'animated zoomIn hidden fast'>
-                    <div id = 'modalTitle'>
-                        Error establishing connection.
-                        <hr />
-                    </div>
-                    <div id = 'modalContent'>
-                        Either your username or password is incorrect, or the user was not found in the directory.
-                        Please register at http://goo.gl/vvISxd/arang.
-                        <br />
-                    </div>
-                    <div class = 'card-action'>
-                        <br />
-                        <div class = 'btn btn-small waves-effect waves-light' id='modalCloseBtn'>close</div>
-                        <script>
-                            $("#modalCloseBtn").click(function(){
-                                $("#modalBackLays").fadeOut();
-                                $("#modal").hide();
-                            });
-                        </script>
-                    </div>
+        <div id = 'modalBackLays' class = 'hidden'>
+            <div id = 'modal' class = 'animated zoomIn hidden fast'>
+                <div id = 'modalTitle'>
+                    Error establishing connection.
+                    <hr />
                 </div>
-                <div id = 'modalInfo' class = 'animated zoomIn hidden fast'>
-                    
-                </div>
-                <div id = 'modalProcess' class = 'animated zoomIn hidden fast'>
-                    Contacting server...<br /><br />
-                    <div class = 'smallFonts'>
-                        This will close automatically when complete
-                    </div>
-                    <br />
-                    <img src = 'img/loader_profile.gif' width = 48/>
+                <div id = 'modalContent'>
+                    Either your username or password is incorrect, or the user was not found in the directory.
+                    Please register at http://goo.gl/vvISxd/arang.
                     <br />
                 </div>
-                <div id = 'overlay_screen' class = 'animated zoomIn hidden fast'>
-
-                </div>
-                <div id = 'modal_noclose_err' class = 'animated zoomIn hidden fast'>
-                    <b>No Internet</b>
-                    <br /><br />
-                    This app requires a working internet connection to function. Please check your internet and try again later.
+                <div class = 'card-action'>
                     <br />
+                    <div class = 'btn btn-small waves-effect waves-light' id='modalCloseBtn'>close</div>
+                    <script>
+                        $("#modalCloseBtn").click(function(){
+                            $("#modalBackLays").fadeOut();
+                            $("#modal").hide();
+                        });
+                    </script>
                 </div>
             </div>
+            <div id = 'modalInfo' class = 'animated zoomIn hidden fast'>
+
+            </div>
+            <div id = 'modalProcess' class = 'animated zoomIn hidden fast'>
+                Contacting server...<br /><br />
+                <div class = 'smallFonts'>
+                    This will close automatically when complete
+                </div>
+                <br />
+                <img src = 'img/loader_profile.gif' width = 48/>
+                <br />
+            </div>
+            <div id = 'overlay_screen' class = 'animated zoomIn hidden fast'>
+
+            </div>
+            <div id = 'modal_noclose_err' class = 'animated zoomIn hidden fast'>
+                <b>No Internet</b>
+                <br /><br />
+                This app requires a working internet connection to function. Please check your internet and try again later.
+                <br />
+            </div>
+        </div>
         <script src = 'js/index.js' ></script>
     </body>
 </html>

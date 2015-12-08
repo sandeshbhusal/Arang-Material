@@ -1,4 +1,5 @@
 if(Parse){
+    app.netInfo();
     var userLat = 0;
     var userLng = 0;
     navigator.geolocation.getCurrentPosition(setPosition);

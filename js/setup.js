@@ -3,7 +3,7 @@ $("#submitBtn").click(function(){
     var typese = $("#driver").is(":checked");
     var un = $("#username").val();
     var pas = $("#password").val();
-    console.log("GOT USERNAME "+un+" AND PASSWORD "+pas);
+    console.log("GOT USERNAME "+un+" AND PASSWORD "+pas+ " AND TYPE "+typese);
     if(un && pas){
         console.log("USERNAME AND PasSWORD Non empty, checking with servers");
         // Validate with server;
