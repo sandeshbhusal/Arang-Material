@@ -1,3 +1,7 @@
+body{
+    overflow:hidden;
+}
+
 #content_wrapper{
     position: fixed;
     top:0;
@@ -7,13 +11,18 @@
     overflow-y: scroll;
     overflow-x: hidden;
 }
+
+a:hover { 
+    color:#ffffff;
+}
+
 .card{
     background: #f1f1f1;
     margin-top: -10px;
     position: absolute;
 }
 .card-top{
-    background: #00a1ff;
+    background: #F15A24;
     position: absolute;
     top: 0;
     left: 0;
@@ -33,6 +42,7 @@
     left: 5%;
     padding: 16px;
     box-shadow: silver 0 1px 1px;
+    color: #000000;
 }
 hr{
     border: none;
