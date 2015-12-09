@@ -52,7 +52,6 @@ if(Parse){
         }
     }
     else{
-        
         $(".collection-item").html("No Vehicles are registered. Register a new vehicle by clicking the + button");
     }
 }

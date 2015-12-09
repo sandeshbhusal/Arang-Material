@@ -4,17 +4,9 @@ $("#nextCarousel").click(function(){
     var start = $("#startpoint option:selected").text();
     var desti = $("#endpoint option:selected").text();
     console.log(start+desti);
-    $("#perLoc").slideUp();
-    $("#desLoc").slideDown();
-    if((start!='') && (desti!='')){
-        $("#modalBackLays").fadeIn();
-        $("#modalProcess").show();
-    }
-    setTimeout(function(){
-        $("#modalBackLays").fadeOut();
-        $("#searchBox").slideUp();
-        $("#resBox").slideDown();
-    }, 2000);
+    $("#searchBox").slideUp();
+    $("#resBox").slideDown();
+    
 });
 $("#closeModal").click(function(){
     $("#modalBackLays").fadeOut();
@@ -32,5 +24,7 @@ else{
     app.netInfo();
 }
 function successFul(){
+    localStorage.setItem("vehicle_id", "tBmGsy4Z9O");
+    app.user.vehicleID = 'tBmGsy4Z9O';
     $("#modalBackLays").fadeOut();
 }

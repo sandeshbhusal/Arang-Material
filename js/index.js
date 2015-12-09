@@ -1,6 +1,6 @@
 $(document).ready(function(){
     if(!app.user.name){
-        $("#wrapper").load("setup.html");
+        $("#wrapper").load("firstrun.html");
     }
     else{
         if(!app.user.runTime){
@@ -9,7 +9,7 @@ $(document).ready(function(){
         }
         else{
             if(app.user.type == false){
-                $("#wrapper").load("../yatru.html");
+                $("#wrapper").load("../driver.html");
             }
             else{
                 $("#wrapper").load("../yatru.html");
