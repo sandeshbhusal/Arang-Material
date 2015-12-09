@@ -1,3 +1,6 @@
+if(app.user.type == 1){
+    $("#wrapper").load("yatru.html");
+}
 var jammed = false;
 var userLat = 0;
 var userLng = 0;
