@@ -14,7 +14,7 @@ if(Parse){
     var vehicles = Parse.Object.extend("vehicle");
     var vehicle = new vehicles();
     var query = new Parse.Query(vehicles);
-    query.get("tBmGsy4Z9O", {
+    query.get(app.user.vehicleID, {
         success:function(data){
             var olLon = data.get("LonNew");
             var olLat = data.get("LatNew");

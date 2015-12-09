@@ -17,7 +17,10 @@ $("#closeModal").click(function(){
     $("#modalBackLays").fadeOut();
 });
 if(Parse){
-    
+    var locations = Parse.Object.extend("Locations");
+    if(locations){    
+        
+    }
 }
 else{
     app.netInfo();
