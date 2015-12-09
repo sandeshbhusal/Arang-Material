@@ -15,21 +15,9 @@ $("#nextCarousel").click(function(){
 });
 $("#closeModal").click(function(){
     $("#modalBackLays").fadeOut();
-})
+});
 if(Parse){
-    console.log("Parse module is loaded. going to continue");
-    var locations = Parse.Object.extend("Locations");
-    var location = new locations();
-    var query = new Parse.Query(locations);
-    query.equalTo("B", "b");
-    query.find({
-        success:function(){
-            console.log("Got the Locations, updating...");
-        },
-        error: function(){
-            console.log("The Locations could not be determined!");
-        }
-    })
+    
 }
 else{
     app.netInfo();
