@@ -1,4 +1,5 @@
 var current = 0;
+$('select').material_select();
 $("#nextCarousel").click(function(){
     if(current == 0 && $("#perLocVal").val()){
         $("#perLoc").slideUp();
