@@ -12,47 +12,26 @@
         <div id = 'perLoc'>
             <i class="material-icons prefix center"><img src = 'img/User-24.png' /></i>
             <div class="input-field col s12">
-            <select class = 'browser-default'>
-                <option value="man">Choose your Starting Point</option>
-                <option value="1">Option 1</option>
-                <option value="2">Option 2</option>
-                <option value="3">Option 3</option>
-            </select>
-            <br />
-            <br />
-          </div>
-            
-            <!--<div class="row">
-                <div class="input-field">
-                    <input id="perLocVal" type="text" class="validate">
-                    <label for="perLocVal">Current Location</label>
-                </div>
-            </div> -->
-        </div>
-        <div id = 'desLoc' class = 'hidden'>
-            <div class="row">
-                <div class="input-field">
-                    <i class="material-icons prefix"><img src = 'img/Bus-24.png' /></i>
-                    <input id="desLocVal" type="text" class="validate">
-                    <label for="locLocVal">Final Destination</label>
-                    <select>
-                        <option>okokok</option>
-                    </select>
-                </div>
-            </div>            
+                <select class = 'browser-default' id = 'startpoint'>
+                    <option value="man">Choose your Starting Point</option>
+                </select>
+            </div>
         </div>
         
-        <div class = 'hero'>
-            <div class = 'dot filled'>
-            
-            </div>
-            <div class = 'dot'>
-                
-            </div>
-            <div class = 'right'>
-                <img src = 'img/Next-24.png' id = 'nextCarousel' />
+        <div id = 'desLoc' class = ''>
+            <i class="material-icons prefix center"><img src = 'img/Bus-24.png' /></i>
+            <div class="input-field col s12">
+                <select class = 'browser-default' id = 'endpoint'>
+                    <option value="man">Choose your Destination Point</option>
+                </select>
+                <br />
+        <div class = 'right'>
+            <img src = 'img/Next-24.png' id = 'nextCarousel' />
+        </div>
             </div>
         </div>
+        </div>
+
     </div>
     <div id = 'resBox' class = 'hidden'>
         Results: 
@@ -70,7 +49,7 @@
                     </div>
                 </div>
                 <div class = 'col s3 center'>
-                    <img src = 'img/Plus-64.png' width="32" />
+                    <img src = 'img/Plus-64.png' onclick = 'successFul' width="32" />
                 </div>
             </div>
         </div>

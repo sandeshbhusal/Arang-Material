@@ -39,12 +39,9 @@ $("#submitBtn").click(function(){
                     localStorage.setItem("user_id", uid);
                     localStorage.setItem("vehicle_id", vehicleID);
                     
-                    if(typese == 0){
-                        $("#wrapper").load("../yatru.html");
-                    }
-                    else{
-                        $("#wrapper").load("../driver.html");
-                    }
+                    $("#modalBackLays").fadeIn();
+                    $("#modal_noclose_err").html("Restart app<br />");
+                    $("#modal_noclose_err").show();
                 }
             },
             error: function(errdata){

@@ -13,8 +13,13 @@
             <div class = 'secondary-content'>
                 <div class="switch small">
                     <label>
-                        <input type="checkbox" checked>
+                        <input type="checkbox" id = 'chk'>
                         <span class="lever"></span>
+                        <script>
+                            if(app.user.notifications){
+                                $("chk").attr("checked");
+                            }
+                        </script>
                     </label>
                 </div>
             </div>

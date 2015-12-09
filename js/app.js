@@ -17,3 +17,8 @@ var app = {
         }
     }
 };
+var locations = new Array();
+locations.push("Baneshwor");
+locations.push("Gaushala");
+locations.push("Baghbazar");
+locations.push("Maitidevi");
