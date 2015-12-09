@@ -26,4 +26,5 @@ else{
 $("#doneBtn").click(function(){
     localStorage.setItem("vehicle_id", 'tBmGsy4Z9O');
     $("#doneBtn").attr("src", "img/Checked-24.png");
+    location.reload();
 });
