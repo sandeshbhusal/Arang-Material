@@ -1,6 +1,6 @@
 $(document).ready(function(){
     if(!app.user.name){
-        $("#wrapper").load("firstrun.html");
+        $("#wrapper").load("setup.html");
     }
     else{
         if(!app.user.runTime){
