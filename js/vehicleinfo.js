@@ -23,8 +23,7 @@ if(Parse){
 else{
     app.netInfo();
 }
-function successFul(){
-    localStorage.setItem("vehicle_id", "tBmGsy4Z9O");
-    app.user.vehicleID = 'tBmGsy4Z9O';
-    $("#modalBackLays").fadeOut();
-}
+$("#doneBtn").click(function(){
+    localStorage.setItem("vehicle_id", 'tBmGsy4Z9O');
+    $("#doneBtn").attr("src", "img/Checked-24.png");
+});

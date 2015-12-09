@@ -57,4 +57,10 @@ if(Parse){
 }
 $("#delvehicle").click(function(){
     localStorage.setItem("vehicle_id", '');
+    $("#modalBackLays").fadeIn();
+    $("#modal_noclose_err").html("Deleted!");
+    $("#modal_noclose_err").show();
+    setTimeout(function(){
+        location.reload()
+    }, 2000)
 });
