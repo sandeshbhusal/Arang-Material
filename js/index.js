@@ -8,7 +8,7 @@ $(document).ready(function(){
             localStorage.setItem("run_time", 1);
         }
         else{
-            if(app.user.type == 0){
+            if(app.user.type == false){
                 $("#wrapper").load("yatru.html");
             }
             else{
